@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.opencart.product.repository;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -8,8 +8,8 @@ import java.util.Optional;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.domain.Ingredient;
-import com.example.demo.utils.IngredientKeys;
+import com.opencart.product.dto.Ingredient;
+import com.opencart.product.utils.IngredientKeys;
 
 @Repository
 public class JdbcIngredientRepository implements IngredientRepository {

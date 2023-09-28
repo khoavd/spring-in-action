@@ -1,4 +1,4 @@
-package com.example.demo.utils;
+package com.opencart.product.utils;
 
 public class IngredientKeys {
 	public static final String ID = "id";

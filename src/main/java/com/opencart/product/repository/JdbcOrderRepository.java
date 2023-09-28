@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.opencart.product.repository;
 
 import java.sql.Types;
 import java.util.Arrays;
@@ -12,8 +12,8 @@ import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Repository;
 import org.springframework.transaction.annotation.Transactional;
 
-import com.example.demo.domain.Taco;
-import com.example.demo.domain.TacoOrder;
+import com.opencart.product.dto.Taco;
+import com.opencart.product.dto.TacoOrder;
 
 @Repository
 public class JdbcOrderRepository implements OrderRepository {

@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.opencart.product.dto;
 
 import java.util.Date;
 import java.util.List;

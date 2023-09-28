@@ -1,4 +1,4 @@
-package com.example.demo.api;
+package com.opencart.product.api;
 
 import java.util.stream.Collectors;
 import java.util.stream.StreamSupport;
@@ -16,11 +16,11 @@ import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 
-import com.example.demo.domain.Ingredient;
-import com.example.demo.domain.Ingredient.Type;
-import com.example.demo.domain.Taco;
-import com.example.demo.domain.TacoOrder;
-import com.example.demo.repository.IngredientRepository;
+import com.opencart.product.dto.Ingredient;
+import com.opencart.product.dto.Taco;
+import com.opencart.product.dto.TacoOrder;
+import com.opencart.product.dto.Ingredient.Type;
+import com.opencart.product.repository.IngredientRepository;
 
 @Controller
 @RequestMapping("/design")

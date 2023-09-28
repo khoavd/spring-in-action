@@ -1,8 +1,8 @@
-package com.example.demo.repository;
+package com.opencart.product.repository;
 
 import java.util.Optional;
 
-import com.example.demo.domain.Ingredient;
+import com.opencart.product.dto.Ingredient;
 
 public interface IngredientRepository {
 	

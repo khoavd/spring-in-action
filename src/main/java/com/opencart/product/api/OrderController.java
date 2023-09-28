@@ -1,4 +1,4 @@
-package com.example.demo.api;
+package com.opencart.product.api;
 
 import javax.validation.Valid;
 
@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.SessionAttributes;
 import org.springframework.web.bind.support.SessionStatus;
 
-import com.example.demo.domain.TacoOrder;
-import com.example.demo.repository.JdbcOrderRepository;
+import com.opencart.product.dto.TacoOrder;
+import com.opencart.product.repository.JdbcOrderRepository;
 
 @Controller
 @RequestMapping("/orders")

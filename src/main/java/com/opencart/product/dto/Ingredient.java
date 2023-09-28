@@ -1,4 +1,4 @@
-package com.example.demo.domain;
+package com.opencart.product.dto;
 
 public class Ingredient {
 	

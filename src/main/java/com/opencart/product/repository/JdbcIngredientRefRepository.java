@@ -1,11 +1,11 @@
-package com.example.demo.repository;
+package com.opencart.product.repository;
 
 import java.util.List;
 
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.domain.Ingredient;
+import com.opencart.product.dto.Ingredient;
 
 @Repository
 public class JdbcIngredientRefRepository implements IngredientRefRepository {

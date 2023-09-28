@@ -1,4 +1,4 @@
-package com.example.demo.repository;
+package com.opencart.product.repository;
 
 import java.sql.Types;
 import java.util.Arrays;
@@ -11,7 +11,7 @@ import org.springframework.jdbc.core.PreparedStatementCreatorFactory;
 import org.springframework.jdbc.support.GeneratedKeyHolder;
 import org.springframework.stereotype.Repository;
 
-import com.example.demo.domain.Taco;
+import com.opencart.product.dto.Taco;
 
 @Repository
 public class JdbcTacoRepository implements TacoRepository {

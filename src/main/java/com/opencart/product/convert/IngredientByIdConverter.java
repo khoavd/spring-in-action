@@ -1,10 +1,10 @@
-package com.example.demo.domain.convert;
+package com.opencart.product.convert;
 
 import org.springframework.core.convert.converter.Converter;
 import org.springframework.stereotype.Component;
 
-import com.example.demo.domain.Ingredient;
-import com.example.demo.repository.IngredientRepository;
+import com.opencart.product.dto.Ingredient;
+import com.opencart.product.repository.IngredientRepository;
 
 @Component
 public class IngredientByIdConverter implements Converter<String, Ingredient>{

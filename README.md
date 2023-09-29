@@ -20,3 +20,8 @@ Composite Key
 - @Embeddable at class and @EmbeddedId in Entity class
 
 Complex Composite Key
+
+@OneToOne
+- Shared Primary Key
+- Foreign key
+- JoinTable

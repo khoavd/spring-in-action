@@ -26,7 +26,7 @@
 			</p>
 		</div>
 		
-		<form method="post" th:action="@{/products/admin/add-category}" th:object="${productCategory}">
+		<form method="post" th:action="@{/products}" th:object="${productCategory}">
 			<h4 class="mb-3">Add Category</h4>
 
 			<div th:if="${#fields.hasAnyErrors()}" class="mb-2">
@@ -42,8 +42,8 @@
 			</div>
 			
 			<button type="submit" name="save" class="btn btn-primary">Save</button>
-			<button type="submit" name="new" class="btn btn-primary ml-2" th:formaction="@{/products/admin/add-category/new}">Save & New</button>
-			<button type="submit" name="cancel" class="btn btn-secondary ml-2" th:formaction="@{/products/admin/add-category/cancel}">Cancel</button>
+			<button type="submit" name="new" class="btn btn-primary ml-2" th:formaction="@{/products/new}">Save & New</button>
+			<button type="submit" name="cancel" class="btn btn-secondary ml-2" th:formaction="@{/products/cancel}">Cancel</button>
 		</form>
 		
 		<div class="mb-5"></div>

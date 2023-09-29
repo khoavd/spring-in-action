@@ -17,6 +17,7 @@ public class ProductValidator {
 		this.repo = repo;
 	}
 	
+	
 	public void validateForAdd(Errors errors, Product product) {
 		
 		ProductEntity entity = repo.readByNameIgnoreCase(product.getName());

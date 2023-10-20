@@ -22,7 +22,7 @@ public class Product {
 	@NotNull
 	@NotBlank
 	@Size(max = 2500, message = "Short description is greater than 2500 characters")
-	private String sortDescription;
+	private String shortDescription;
 	
 	@NotNull
 	@NotBlank
@@ -30,7 +30,7 @@ public class Product {
 	private String description;
 	
 	@DecimalMin("0.0")
-	@DecimalMax("10000.0")
+	@DecimalMax("99999999.0")
 	private double price;
 	
 	private ProductCategory category;
@@ -59,12 +59,12 @@ public class Product {
 		this.cateId = cateId;
 	}
 
-	public String getSortDescription() {
-		return sortDescription;
+	public String getShortDescription() {
+		return shortDescription;
 	}
 
-	public void setSortDescription(String sortDescription) {
-		this.sortDescription = sortDescription;
+	public void setShortDescription(String shortDescription) {
+		this.shortDescription = shortDescription;
 	}
 
 	public String getDescription() {

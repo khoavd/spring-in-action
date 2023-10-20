@@ -31,7 +31,7 @@ public class ProductMapper {
 		to.setId(from.getId());
 		to.setName(from.getName());
 		to.setCategory(categoryRepo.findById(from.getCateId()).get());
-		to.setSortDescription(from.getSortDescription());
+		to.setShortDescription(from.getShortDescription());
 		to.setDescription(from.getDescription());
 		to.setPrice(from.getPrice());
 		
@@ -43,12 +43,14 @@ public class ProductMapper {
 		Product to = new Product();
 		
 		to.setId(from.getId());
+		to.setName(from.getName());
 		to.setCategory(
 				cateMapper.mapProductCategoryFromProductCategoryEntity(
 						from.getCategory()));
-		to.setSortDescription(from.getSortDescription());
+		to.setShortDescription(from.getShortDescription());
 		to.setDescription(from.getDescription());
 		to.setPrice(from.getPrice());
+		to.setCateId(from.getCategory().getId());
 		
 		return to;
 	}

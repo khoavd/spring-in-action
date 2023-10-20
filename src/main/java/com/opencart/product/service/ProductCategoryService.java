@@ -1,9 +1,9 @@
 package com.opencart.product.service;
 
-import java.util.List;
 
 import org.springframework.stereotype.Service;
 
+import com.opencart.product.dto.ProductCategories;
 import com.opencart.product.dto.ProductCategory;
 import com.opencart.product.mapper.ProductCategoryMapper;
 import com.opencart.product.repository.ProductCategoryRepository;
@@ -27,7 +27,7 @@ public class ProductCategoryService {
 						mapper.mapProductCategoryEntityFromProductCategory(model)));
 	}
 	
-	public List<ProductCategory> getAllProductCategory() {
+	public ProductCategories getAllProductCategory() {
 		return mapper.mapProductCategoriesFromProductCategoryEntities(repo.findAll());
 	}
 }

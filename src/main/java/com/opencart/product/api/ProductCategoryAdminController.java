@@ -83,10 +83,8 @@ public class ProductCategoryAdminController {
 			Errors errors, 
 			SessionStatus sessionStatus,
 			HttpServletRequest request) {
-		
-		Long savedId = (Long) request.getSession().getAttribute("savedId");
-		
-		validator.validateName(errors, productCategory, savedId);
+				
+		validator.validateNameForAddNew(errors, productCategory);
 
 		if (errors.hasErrors()) {
 			return "products/add-category";

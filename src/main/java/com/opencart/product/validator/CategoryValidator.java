@@ -30,4 +30,15 @@ public class CategoryValidator {
 		}
 		
 	}
+	
+	public void validateNameForAddNew(Errors errors, ProductCategory model) {
+		
+		ProductCategoryEntity category = repo.findByNameIgnoreCase(model.getName());
+		
+		if (category == null) {
+			return;
+		}
+		
+		errors.rejectValue("name", "DUP", "Name is already used by an existing object");
+	}
 }

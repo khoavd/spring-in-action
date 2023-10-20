@@ -21,13 +21,13 @@ public class ProductEntity {
 	@Column(name = "NAME")
 	private String name;
 	
-	@Column(name = "SORT_DESCRIPTION")
-	private String sortDescription;
+	@Column(name = "SHORT_DESC")
+	private String shortDescription;
 	
 	@Column(name = "DESCRIPTION")
 	private String description;
 	
-	@Column(name = "PRICE")
+	@Column(name = "PRICE", precision = 8, scale = 2)
 	private double price;
 	
 	@ManyToOne
@@ -50,12 +50,12 @@ public class ProductEntity {
 		this.name = name;
 	}
 
-	public String getSortDescription() {
-		return sortDescription;
+	public String getShortDescription() {
+		return shortDescription;
 	}
 
-	public void setSortDescription(String sortDescription) {
-		this.sortDescription = sortDescription;
+	public void setShortDescription(String shortDescription) {
+		this.shortDescription = shortDescription;
 	}
 
 	public String getDescription() {

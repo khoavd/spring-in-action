@@ -7,6 +7,7 @@ import javax.validation.Valid;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.Errors;
@@ -20,7 +21,7 @@ import com.opencart.product.dto.Ingredient;
 import com.opencart.product.dto.Taco;
 import com.opencart.product.dto.TacoOrder;
 import com.opencart.product.dto.Ingredient.Type;
-import com.opencart.product.repository.IngredientRepository;
+import com.opencart.product.repository.JdbcIngredientRepository;
 
 @Controller
 @RequestMapping("/design")
@@ -29,9 +30,9 @@ public class DesignTacoController {
 	
 	Logger logger = LoggerFactory.getLogger(DesignTacoController.class);
 	
-	private final IngredientRepository ingredientRepository;
+	private final JdbcIngredientRepository ingredientRepository;
 	
-	public DesignTacoController(IngredientRepository ingredientRepository) {
+	public DesignTacoController(JdbcIngredientRepository ingredientRepository) {
 		this.ingredientRepository = ingredientRepository;
 	}
 	

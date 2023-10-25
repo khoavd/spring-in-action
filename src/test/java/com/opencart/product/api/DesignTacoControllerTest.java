@@ -1,4 +1,4 @@
-package com.example.demo;
+package com.opencart.product.api;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
@@ -8,12 +8,16 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
 import org.springframework.boot.test.autoconfigure.web.servlet.WebMvcTest;
+import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.junit.jupiter.SpringJUnitConfig;
 import org.springframework.test.web.servlet.MockMvc;
 
-import com.opencart.product.api.DesignTacoController;
-
-@WebMvcTest(DesignTacoController.class)
+//@SpringJUnitConfig
+//@WebMvcTest(controllers = DesignTacoController.class)
+@SpringBootTest
+@AutoConfigureMockMvc
 public class DesignTacoControllerTest {
 	
 	@Autowired
